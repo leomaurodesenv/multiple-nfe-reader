@@ -13,7 +13,7 @@ def decode(imagePath):
     @module: nfeReader::barcode::decode
     Decode barcode from a image
     @param imagePath: image path
-    @return: decoded code, image array 
+    @return: decoded code, image array
     @access: public
     '''
     # loading image, in GRAY scale

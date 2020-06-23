@@ -1,8 +1,11 @@
-# nfeReader package [in construction]
+# nfeReader (in construction)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/63503e41c3b047858be4c86445f5e286)](https://www.codacy.com/manual/leomaurodesenv/multiple-nfe-reader?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=leomaurodesenv/multiple-nfe-reader&amp;utm_campaign=Badge_Grade)
    
 Read multiples details from a "NFe - Nota Fiscal eletrônica".   
--   This package uses [pyzbar](https://github.com/NaturalHistoryMuseum/pyzbar) and [opencv](https://github.com/skvark/opencv-python).
--   [Nota Fiscal eletrônica (PT-BR)](https://bomcontrole.com.br/cupom-fiscal-eletronico-sat/) details
+-   This package uses
+    -   [pyzbar](https://github.com/NaturalHistoryMuseum/pyzbar) - read barcode and QR code. 
+    -   [opencv](https://github.com/skvark/opencv-python) - read and process images. 
+-   [Nota Fiscal eletrônica (PT-BR)](https://bomcontrole.com.br/cupom-fiscal-eletronico-sat/) details 
 -   Barcode and QR code
     -   [Generators](https://barcode.tec-it.com/en/Code128)
     -   [Symbologies](https://www.tec-it.com/en/support/knowbase/barcode-overview/linear/Default.aspx)
@@ -29,14 +32,13 @@ Or install this package in your environment.
 
 ```shell
 #-- installing the package
-$ python -m pip install --user --upgrade setuptools wheel
 $ python setup.py install
 ```
 
 ---
 ## Coding
 
-Suprise yourself viewing [tests/tests.py](tests/tests.py).   
+Suprise yourself running [tests/tests.py](tests/tests.py).   
 ```python
 from nfeReader import barcode, qrcode
 

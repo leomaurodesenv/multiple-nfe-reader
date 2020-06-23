@@ -7,7 +7,7 @@ import sys
 
 # add parent path to python paths
 parentdir = os.path.join(os.path.dirname(__file__), '../')
-sys.path.insert(0,parentdir) 
+sys.path.insert(0,parentdir)
 
 # imports
 import cv2
