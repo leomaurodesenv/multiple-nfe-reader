@@ -1,4 +1,4 @@
-# nfeReader (in construction)
+# nfeReader
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/63503e41c3b047858be4c86445f5e286)](https://www.codacy.com/manual/leomaurodesenv/multiple-nfe-reader?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=leomaurodesenv/multiple-nfe-reader&amp;utm_campaign=Badge_Grade)
    
 Read multiples details from a "NFe - Nota Fiscal eletrônica".   
