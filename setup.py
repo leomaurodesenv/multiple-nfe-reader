@@ -8,7 +8,7 @@ with open('README.md', 'r') as f:
 
 setuptools.setup(
     name='nfeReader',
-    version='0.0.2',
+    version='0.0.3',
     author='Leonardo Mauro',
     author_email='leo.mauro.desenv@gmail.com',
     description='Multiple  NFe reader - barcode, QR code, and OCR reader',
