@@ -5,6 +5,7 @@ Read multiples details from a "NFe - Nota Fiscal eletrônica".
 -   This package uses 
     -   [pyzbar](https://github.com/NaturalHistoryMuseum/pyzbar) - read barcode and QR code 
     -   [opencv](https://github.com/skvark/opencv-python) - read and process images   
+    -   [tesseract](https://github.com/tesseract-ocr/tesseract/wiki) - Optical Character Recognition (OCR)   
 -   [Nota Fiscal eletrônica (PT-BR)](https://bomcontrole.com.br/cupom-fiscal-eletronico-sat/) details 
 -   Barcode and QR code
     -   [Generators](https://barcode.tec-it.com/en/Code128)
@@ -16,12 +17,13 @@ Read multiples details from a "NFe - Nota Fiscal eletrônica".
 This package can:
 1.  Decode barcode from images.
 2.  Decode QR code from images.
-3.  Read text from images _(working on)_.
+3.  Read text from images.
 
 ---
 ## Installation
 
-Install the requirements to use this package.
+Install the requirements to use this package.   
+You have to install [tesseract](https://github.com/tesseract-ocr/tesseract/wiki) in your computer.   
 
 ```shell
 #-- installing the requirements
@@ -40,19 +42,22 @@ $ python setup.py install
 
 Suprise yourself running [tests/tests.py](tests/tests.py).   
 ```python
-from nfeReader import barcode, qrcode
+from nfeReader import barcode, qrcode, ocr
 
 # Decode from image file
 barcode.decodeFromFile('image/path')
 qrcode.decodeFromFile('image/path')
+ocr.decodeFromFile('image/path')
 
 # Decode from image array
 barcode.decodeFromArray('numpy.array')
 qrcode.decodeFromArray('numpy.array')
+ocr.decodeFromArray('image/path')
 
 # Decode from image file or image array
 barcode.decode('image/path' or 'numpy.array')
 qrcode.decode('image/path' or 'numpy.array')
+ocr.decode('image/path' or 'numpy.array')
 ```
 
 ---

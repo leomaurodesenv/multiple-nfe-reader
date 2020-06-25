@@ -2,8 +2,8 @@
 #-- Libraries
 #--------------------------------------------
 import cv2
-from pyzbar.pyzbar import decode as qrDecode
 import numpy as np
+from pyzbar.pyzbar import decode as qrDecode
 
 
 #--------------------------------------------
@@ -40,8 +40,8 @@ def decodeFromFile(imagePath):
 
 def decode(image):
     '''
-    @module: nfeReader::barcode::decode
-    Decode barcode from a image file or image array
+    @module: nfeReader::qrcode::decode
+    Decode QR code from a image file or image array
     @param image: image path or image array
     @return: decoded code, image array
     @access: public

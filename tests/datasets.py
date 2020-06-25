@@ -11,6 +11,7 @@ datasetFolder = 'dataset/'
 datasetFolder = os.path.join(os.path.dirname(__file__), datasetFolder)
 barcodeFolder = os.path.join(datasetFolder, 'barcode/')
 qrcodeFolder = os.path.join(datasetFolder, 'qrcode/')
+ocrFolder = os.path.join(datasetFolder, 'ocr/')
 
 
 #--------------------------------------------
@@ -50,3 +51,4 @@ def _getFilePath(folderPath):
 emptyImage = os.path.join(datasetFolder, 'empty.png')
 barcodeImages = _getFilePath(barcodeFolder)
 qrcodeImages = _getFilePath(qrcodeFolder)
+ocrImages = _getFilePath(ocrFolder)

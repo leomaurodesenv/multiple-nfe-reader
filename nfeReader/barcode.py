@@ -2,8 +2,8 @@
 #-- Libraries
 #--------------------------------------------
 import cv2
-from pyzbar.pyzbar import decode as barDecode
 import numpy as np
+from pyzbar.pyzbar import decode as barDecode
 
 
 #--------------------------------------------
