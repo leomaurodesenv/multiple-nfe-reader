@@ -47,5 +47,5 @@ def decode(image):
     @access: public
     '''
     # is image or array?
-    return decodeFromArray(image) if type(image) is np.ndarray \
+    return decodeFromArray(image) if isinstance(image, np.ndarray) \
         else decodeFromFile(image)
